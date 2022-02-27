@@ -1,0 +1,15 @@
+<div>
+    <p>Follow us: </p>
+    <div>
+        <ul class="footer-list">
+            <li class="footer-list__item" *ngFor="let element of footer">
+                <a class="footer-list__item--link" routerLink="{{ element.link }}"
+                >
+                {{ element.name}}
+                </a>
+            </li>
+          </ul>
+    </div>
+    <p>&copy; 2022 - Shopeame</p>
+</div>
+

@@ -1,0 +1,18 @@
+<header>
+    <nav>
+      <ul class="header-list">
+        <li class="header-list__item" *ngFor="let element of header">
+          <fa-icon
+            class="header__icon"
+            size="1x"
+            [icon]="element.icon"
+            ></fa-icon>
+            <!-- [icon]="{{element.icon}}"  ARRIBA EN FAICON-->
+            <a class="header-list__item--link" routerLink="{{ element.link }}"
+            >
+            {{ element.name | uppercase }}
+        </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
