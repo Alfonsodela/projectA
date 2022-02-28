@@ -1,0 +1,14 @@
+.product-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 24px;
+    justify-content: center;
+
+    &__element {
+        width: 240px;
+        margin-right: 24px;
+        border: 1px solid lightgrey;
+        margin-bottom: 24px;
+    }
+}
