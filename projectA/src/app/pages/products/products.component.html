@@ -6,8 +6,10 @@
         <div class="product-list">
             <app-product
                 *ngFor="let product of products"
+                class="product-list__element"
                 [product]="product"
             ></app-product>
         </div>
     </div>
 </div>
+
