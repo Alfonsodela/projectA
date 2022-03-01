@@ -1,3 +1,7 @@
+body {
+  margin:0;
+}
+
 ul {
   list-style-type: none;
   padding: 0px;
@@ -23,7 +27,7 @@ ul {
   align-items: center;
 
   height: 72px;
-  margin: 10px;
+  margin: 0;
 
   background-color: #ffc970;
 
@@ -31,3 +35,16 @@ ul {
     margin: 20px;
   }
 }
+
+a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+}
+/* Each state */
+a:visited { text-decoration: none; color:rgb(68, 48, 11); }
+a:hover { text-decoration: none; color:rgb(165, 66, 0); }
+a:focus { text-decoration: none; color:rgb(255, 255, 204); }
+a:hover, a:active { text-decoration: none; color:black }

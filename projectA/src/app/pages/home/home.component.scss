@@ -1,7 +1,22 @@
+body {
+    background-color: grey;
+}
+
 .home{
-    padding: 15px;
+    background-color: white;
+    -webkit-box-shadow: 5px 10px 12px 0px rgba(210,210,210,0.69); 
+    box-shadow: 5px 10px 12px 0px rgba(210,210,210,0.69);
+    -webkit-box-shadow: inset -4px 8px 15px 0px rgba(248,248,248,0.86); 
+    box-shadow: inset -4px 8px 15px 0px rgba(248,248,248,0.86);
+    border-radius: 10px;
+    padding: 30px 30px 60px 30px;
 }
 
 h3{
     text-align: center;
+    margin: 25px;
+}
+
+h4 {
+    margin: 20px 0;
 }
