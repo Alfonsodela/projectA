@@ -11,7 +11,7 @@ export class HeaderComponent implements OnInit {
 
   @Input() header!: HeaderInterface[];
   
-  public homeIcon = faHome;
+  public homeIcon= faHome;
   public settingsIcon = faGear;
   public listIcon = faList;
 

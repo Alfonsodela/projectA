@@ -1,0 +1,33 @@
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.header__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100px;
+
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.header-list {
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  height: 72px;
+  margin: 10px;
+
+  background-color: #ffc970;
+
+  &__item{
+    margin: 20px;
+  }
+}

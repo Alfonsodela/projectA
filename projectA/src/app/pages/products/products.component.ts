@@ -9,6 +9,7 @@ import { ProductInterface } from '../../core/services/models/product.model';
 })
 export class ProductsComponent implements OnInit {
   public products: ProductInterface[] = [];
+  
   constructor(private ProductsService: ProductsService) { 
     console.log("construido products")
   }
