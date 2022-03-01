@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
+import { Router } from '@angular/router';
 import { ProductInterface } from 'src/app/core/services/models/product.model';
 
 @Component({
@@ -9,10 +10,15 @@ import { ProductInterface } from 'src/app/core/services/models/product.model';
 export class ProductComponent implements OnInit {
 
   @Input() public product?: ProductInterface;
+  @Input() public enableProductEdit: boolean = false;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  public editProduct() {
+    this.router.navigate(['/edit-form', this.product?.id]);
   }
 
 }

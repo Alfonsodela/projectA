@@ -11,14 +11,11 @@
         [routerLink]="['/products', product.id]"
         >Show more...</a
       >
-      <button class="product__edit-button">Edit</button>
+      <button
+      class="product__edit-button"
+      (click)="editProduct()"
+      >Edit</button>
     </div>
-    <!-- <a class="product__el product__edit" [routerLink]="['/form:id']">Edit</a> -->
-    <!-- <button
-            *ngIf="enableProductEdit"
-            class="product__delete-button"
-            (click)="deleteProduct()"
-        >Delete</button> -->
-    <!-- Añadir botón para editar producto y función que navegue al formulario de edición con el id como param -->
+      
   </div>
 </div>

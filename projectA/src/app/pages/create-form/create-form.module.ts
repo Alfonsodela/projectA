@@ -3,14 +3,14 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { FormRoutingModule } from './create-form-routing.module';
-import { FormComponent } from './create-form.component';
+import { CreateFormComponent } from './create-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 
 @NgModule({
   declarations: [
-    FormComponent
+    CreateFormComponent
   ],
   imports: [
     CommonModule,
@@ -20,4 +20,4 @@ import { RouterModule } from '@angular/router';
     SharedModule
   ]
 })
-export class FormModule { }
+export class CreateFormModule { }

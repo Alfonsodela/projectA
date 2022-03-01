@@ -12,17 +12,17 @@ export class AppComponent {
 
   public header: HeaderInterface[] = [
     {
-      icon: "homeIcon",
+      icon: "",
       name: "home",
       link: "/home"
     },
     {
-      icon: "settingsIcon",
+      icon: "",
       name: "products",
       link: "/products"
     },
     {
-      icon: "listIcon",
+      icon: "",
       name: "settings",
       link: "/form"
     }

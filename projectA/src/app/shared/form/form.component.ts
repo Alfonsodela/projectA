@@ -33,8 +33,12 @@ export class FormComponent implements OnInit {
   public saveProduct(event: Event) {
     event.preventDefault();
     if (this.createProductForm?.valid) {
-      // Añadir condición de que si el producto introducido por input está definido se edite el producto si no
-      // que se cree.
+      let productRequest;
+      if (this.product?.id) {
+        productRequest = this.productsService.editProduct(this.product.id.toString(), this.createProductForm.value)
+      } else {
+        productRequest = this.productsService.createProduct(this.createProductForm.value)
+      }
       this.productsService
         .createProduct(this.createProductForm.value)
         .subscribe(() => {

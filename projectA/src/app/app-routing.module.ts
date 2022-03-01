@@ -16,12 +16,12 @@ const routes: Routes = [
   },
   {
     path: `form`, loadChildren: () =>
-      import('./pages/create-form/create-form.module').then(m => m.FormModule)
+      import('src/app/pages/create-form/create-form.module').then(m => m.CreateFormModule)
   },
-  // {
-  //   path: 'form/:id',
-  //   loadChildren: () => import('src/app/pages/edit-product/edit-product.module').then(m => m.EditProductModule)
-  // },
+  {
+     path: 'edit-form/:id',
+     loadChildren: () => import('src/app/pages/edit-product/edit-product.module').then(m => m.EditProductModule)
+  },
   { path: ``, redirectTo: `home`, pathMatch: `full` }
 ];
 

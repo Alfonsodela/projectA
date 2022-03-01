@@ -1,9 +1,9 @@
 <form
     *ngIf="createProductForm"
     (submit)="saveProduct($event)"
+    [formGroup]="createProductForm"
     class="form"
 >
-<!-- [formGroup]="createProductForm"  ESTO VA ARRIBA PERO DA ERROR :/-->
     <div class="field-container">
         <input class="form__input" placeholder="Name" formControlName="name">
         <p
@@ -45,5 +45,5 @@
         class="form__button"
         type="submit"
         [disabled]="!createProductForm.valid"
-    >Create</button>
+    >{{ product ? 'Edit' : 'Create' }}</button>
 </form>
