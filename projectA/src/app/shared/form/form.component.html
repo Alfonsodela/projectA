@@ -14,7 +14,7 @@
         </p>
     </div>
     <div class="field-container">
-        <input class="form__input" placeholder="Price" formControlName="price">
+        <input class="form__input" placeholder="Price" formControlName="price" >
         <p
             *ngIf="!createProductForm.get('price')?.valid
             && createProductForm.get('price')?.dirty
@@ -34,6 +34,14 @@
     </div>
     <div class="field-container">
         <input class="form__input" placeholder="Image URL" formControlName="image">
+        <p
+            *ngIf="!createProductForm.get('image')?.valid
+            && createProductForm.get('image')?.dirty
+            && createProductForm.get('image')?.errors?.['required']"
+            class="input-error"
+        >
+            This value is required
+        </p>
     </div>
     <div class="field-container">
         <input class="form__input" placeholder="Color" formControlName="color">
