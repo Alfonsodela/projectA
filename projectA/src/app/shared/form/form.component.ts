@@ -26,7 +26,7 @@ export class FormComponent implements OnInit {
       price: new FormControl(this.product?.price || '', [ Validators.required, Validators.maxLength(5)]),
       image: new FormControl(this.product?.image || '', Validators.required),
       description: new FormControl(this.product?.description || ''),
-      stars: new FormControl(this.product?.stars || Validators.required),
+      stars: new FormControl(this.product?.stars || '',),
     });
   }
 
