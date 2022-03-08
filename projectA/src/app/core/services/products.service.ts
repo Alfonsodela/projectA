@@ -22,9 +22,7 @@ export class ProductsService {
     ) as Observable<ProductInterface>;
   }
 
-  public createProduct(
-    product: ProductInterface
-  ): Observable<ProductInterface> {
+  public createProduct(product: ProductInterface): Observable<ProductInterface> {
     return this.httpClient.post(
       `${environment.ApiURL}products`,
       product
