@@ -1,15 +1,23 @@
 <div class="products">
-    <div>
-        <h2>List of products ({{products.length}}) </h2>
+  <div>
+    <h2>List of products ({{ products.length }})</h2>
+  </div>
+  <div>
+    <div class="product-search">
+      <input
+        [(ngModel)]="filterValue"
+        class="product-search__placeholder"
+        placeholder="Search"
+      />
+      <img class="product-search__icon" src="../../../assets/icon-search.png" />
     </div>
-    <div>
-        <div class="product-list">
-            <app-product
-                *ngFor="let product of products"
-                class="product-list__element"
-                [product]="product"
-            ></app-product>
-        </div>
-    </div>
-</div>
 
+    <div class="product-list">
+      <app-product
+        *ngFor="let product of products | filterProducts: filterValue"
+        class="product-list__element"
+        [product]="product"
+      ></app-product>
+    </div>
+  </div>
+</div>

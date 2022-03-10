@@ -1,21 +1,53 @@
-.product-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top:30px;
+.product-search {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
 
-    &__element {
-        width: 200px;
-        margin-right: 24px;
-        margin-bottom: 24px;
-    }
+  height: 35px;
+  width: 225px;
+  padding: 10px;
+  margin-top: 10px;
+
+  background: #f1f3f4;
+  border-radius: 8px;
+  font-size: 16px;
+
+  &__placeholder {
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+
+  &__icon {
+    color: grey;
+    font-size: 14px;
+  }
+}
+
+input{
+    outline:none;
+} 
+
+.product-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+
+  &__element {
+    width: 200px;
+    margin-right: 24px;
+    margin-bottom: 24px;
+  }
 }
 .products {
-    background-color: white;
-    -webkit-box-shadow: 5px 10px 12px 0px rgba(210,210,210,0.69); 
-    box-shadow: 5px 10px 12px 0px rgba(210,210,210,0.69);
-    -webkit-box-shadow: inset -4px 8px 15px 0px rgba(248,248,248,0.86); 
-    box-shadow: inset -4px 8px 15px 0px rgba(248,248,248,0.86);
-    border-radius: 10px;
-    padding: 30px 30px 60px 30px;
+  background-color: white;
+  -webkit-box-shadow: 5px 10px 12px 0px rgba(210, 210, 210, 0.69);
+  box-shadow: 5px 10px 12px 0px rgba(210, 210, 210, 0.69);
+  -webkit-box-shadow: inset -4px 8px 15px 0px rgba(248, 248, 248, 0.86);
+  box-shadow: inset -4px 8px 15px 0px rgba(248, 248, 248, 0.86);
+  border-radius: 10px;
+  padding: 30px 30px 60px 30px;
 }

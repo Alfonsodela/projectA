@@ -1,3 +1,4 @@
+import { FilterProductsPipe } from './pipes/filter-products.pipe';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -10,7 +11,8 @@ import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
     ProductComponent,
-    FormComponent
+    FormComponent,
+    FilterProductsPipe
   ],
   imports: [
     CommonModule,
@@ -19,7 +21,8 @@ import { RouterModule } from '@angular/router';
   ],
   exports: [
     ProductComponent,
-    FormComponent
+    FormComponent,
+    FilterProductsPipe
   ]
 })
 export class SharedModule { }

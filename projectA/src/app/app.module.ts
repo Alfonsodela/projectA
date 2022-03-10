@@ -15,7 +15,7 @@ import { CoreModule } from './core/core.module';
     CoreModule,
     BrowserModule,
     FontAwesomeModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

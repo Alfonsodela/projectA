@@ -17,21 +17,17 @@ export class ProductsService {
   }
 
   public getProductById(id: string): Observable<ProductInterface> {
-    return this.httpClient.get(
-      `${environment.ApiURL}products/${id}`
+    return this.httpClient.get(`${environment.ApiURL}products/${id}`
     ) as Observable<ProductInterface>;
   }
 
   public createProduct(product: ProductInterface): Observable<ProductInterface> {
-    return this.httpClient.post(
-      `${environment.ApiURL}products`,
-      product
+    return this.httpClient.post(`${environment.ApiURL}products`, product
     ) as Observable<ProductInterface>;
   }
 
   public deleteProduct(id: string): Observable<ProductInterface> {
-    return this.httpClient.delete(
-      `${environment.ApiURL}products/${id}`
+    return this.httpClient.delete(`${environment.ApiURL}products/${id}`
     ) as Observable<ProductInterface>;
   }
 
