@@ -25,7 +25,7 @@
         </p>
         <p
             *ngIf="!createProductForm.get('price')?.valid
-            && createProductForm.get('price')?.dirty
+           
             && createProductForm.get('price')?.errors?.['maxlength']"
             class="input-error"
         >
@@ -44,7 +44,7 @@
         </p>
     </div>
     <div class="field-container">
-        <input class="form__input" placeholder="Stars" formControlName="stars" type="number" min="1" max="5">
+        <input class="form__input" placeholder="Stars" formControlName="stars" >
     </div>
     <div class="field-container">
         <textarea class="form__input form__textarea" formControlName="description"></textarea>

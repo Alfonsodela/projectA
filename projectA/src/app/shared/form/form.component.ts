@@ -26,13 +26,14 @@ export class FormComponent implements OnInit {
       price: new FormControl(this.product?.price || '', [ Validators.required, Validators.maxLength(5)]),
       image: new FormControl(this.product?.image || '', Validators.required),
       description: new FormControl(this.product?.description || ''),
-      stars: new FormControl(this.product?.stars || '',),
+      stars: new FormControl(this.product?.stars || ''),
     });
   }
 
   public saveProduct(event: Event) {
     event.preventDefault();
     if (this.createProductForm?.valid) {
+    
       let productRequest;
       if (this.product?.id) {
         productRequest = this.productsService.editProduct(this.product.id.toString(), this.createProductForm.value)
