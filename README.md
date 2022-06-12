@@ -31,4 +31,4 @@ npm run start
 
 ## 💻 Team & Idea <a name = "team"></a> 
 This is an Upgrade Hub bootcamp project. <br>
-Made by [Alfonso](https://github.com/Alfonsodela) and [Emely](https://github.com/emelyalonzo).
+Made by [Alfonso](https://github.com/Alfonsodela) and [Emely](https://github.com/emelyalonzo)
