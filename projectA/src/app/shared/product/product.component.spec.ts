@@ -14,7 +14,6 @@ describe('ProductComponent', () => {
       ],
       providers: [
         
-        
       ],
       imports: [
         RouterTestingModule

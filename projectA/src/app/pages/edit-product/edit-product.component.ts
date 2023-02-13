@@ -23,6 +23,7 @@ export class EditProductComponent implements OnInit {
       const productId = params["id"];
       this.productsService.getProductById(productId).subscribe((product) => {
         this.product = product;
+        console.log(product)
       });
     });
   }
