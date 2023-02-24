@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+
+// TO DO
 const routes: Routes = [
   {
     path: `home`, loadChildren: () =>
